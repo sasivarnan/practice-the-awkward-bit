@@ -26,7 +26,7 @@ Then ask for a reflection or retry your reply. The first model download is large
 
 - **Replies and reflection run on your device.** Conversation text is not sent to an inference API.
 - **No transcript is saved automatically.** Refresh clears an unsaved practice.
-- **You choose what to keep.** Saving uses this browser’s localStorage; export creates a text file. Saved practice can be deleted.
+- **You choose what to keep.** Saving uses this browser’s localStorage; export creates a text file. Saved practice can be deleted, and a separate control removes downloaded model files.
 
 Local storage is not encrypted by the app, so be careful on a shared device. The site and model downloads still make network requests, and hosting can keep ordinary request metadata. Deleting a practice does not delete the cached model.
 
@@ -55,9 +55,9 @@ Conversation in memory
 Conversation text stays on the device.
 ```
 
-Role-play and reflection use separate prompts. Reflection returns structured JSON, and the app checks that its quoted reply actually came from the user.
+Role-play and reflection use separate prompts. Reflection returns structured JSON. Its quote must match a user reply, suggestions come from three safe wording options, and alternative replies are checked for unsupported new words. This deliberately favors small edits over invented excuses.
 
-Model loading, real replies, reflection, rewind, and save/restore worked in the desktop browser test. Tests, type checks, and the build passed. Feedback can still invent details. Treat it as a suggestion to try, not a prediction of how someone will react.
+Model loading, real replies, reflection, rewind, and save/restore worked in the desktop browser test. Tests, type checks, and the build passed. The wording guard is conservative and may reject a reasonable synonym. It cannot guarantee that every suggestion is useful. Treat feedback as something to try, not a prediction of how someone will react.
 
 ## Why Does Open Innovation Matter?
 
