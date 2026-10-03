@@ -20,7 +20,7 @@ The app contains no conversation API or analytics. Inference occurs in a dedicat
 
 ## Validation and limits
 
-Run `node --experimental-strip-types tests/practice.test.ts` for rewind and prompt contract checks. Build/type verification does not establish model response quality. Model loading, latency and conversation quality must be measured on a suitable browser/GPU before claiming them in the submission. No friend testing has occurred. Generated feedback can be inaccurate. Text-only and English-first; no clinical assessment, personality scoring, cloud fallback, or mobile compatibility guarantee.
+Run `node --experimental-strip-types tests/practice.test.ts` for rewind, prompt, and structured feedback validation checks. Gemma loading, a real generated reply, structured feedback, reply rewind, and browser-local save/restore were exercised in the desktop browser. IndexedDB caches model assets. This is a smoke test, not a quality benchmark: feedback can still invent details or give awkward wording. The export control was exercised, but automated download capture was unavailable. No friend testing has occurred. Text-only and English-first; no clinical assessment, personality scoring, cloud fallback, or mobile compatibility guarantee. Keep one practice tab open to avoid loading duplicate models into GPU memory.
 
 ## Submission checklist
 
