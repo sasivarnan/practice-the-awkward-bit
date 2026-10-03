@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {rewind,rolePrompt,feedbackPrompt,type Message} from '../lib/practice.ts';
+const history:Message[]=[{role:'assistant',content:'Come tonight?'},{role:'user',content:'No thanks'},{role:'assistant',content:'Why not?'},{role:'user',content:'I need a quiet evening'}];
+assert.deepEqual(rewind(history,1),{messages:[history[0]],draft:'No thanks'});
+assert.deepEqual(rewind(history,3),{messages:history.slice(0,3),draft:'I need a quiet evening'});
+assert.throws(()=>rewind(history,0));
+assert.equal(history.length,4);
+assert.match(rolePrompt('friend','decline','','mildly pushy'),/respect a clear boundary/);
+assert.match(feedbackPrompt('decline',history),/Quote one actual USER sentence/);
+console.log('Practice rewind and prompt contract checks passed.');
