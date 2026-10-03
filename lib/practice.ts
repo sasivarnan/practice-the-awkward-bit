@@ -1,4 +1,4 @@
-export const MODEL = 'Llama-3.2-3B-Instruct-q4f16_1-MLC';
+export const MODEL = 'gemma-2-2b-it-q4f16_1-MLC';
 export const scenarios = [
  {id:'invitation', title:'Decline an invitation', subtitle:'Say no without a long apology.', person:'A friend inviting you out', goal:'Decline tonight’s invitation kindly, without making an excuse.', opening:'Hey! We’re going out tonight. You’re coming, right?', starter:'Thanks for inviting me. I’m going to sit this one out tonight.'},
  {id:'borrowed', title:'Ask for something back', subtitle:'Make a clear request, kindly.', person:'A friend who borrowed your headphones', goal:'Ask for your headphones back by Friday.', opening:'Hey, what’s up?', starter:'Hey, could I get my headphones back by Friday? I need them this weekend.'},

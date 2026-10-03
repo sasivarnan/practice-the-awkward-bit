@@ -8,7 +8,7 @@ Node 22.13+; run `npm install`, then `npm run dev`. `npm run build` produces the
 
 ## Model
 
-WebLLM `Llama-3.2-3B-Instruct-q4f16_1-MLC`, Meta's open-weight instruction model, quantized by MLC. Model weights, tokenizer and compiled runtime download from WebLLM's configured asset hosts. Model use is subject to the Llama 3.2 Community License and acceptable use policy; this is open-weight, not a claim that Llama is OSI-certified open source. See https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct and https://github.com/mlc-ai/web-llm.
+WebLLM `gemma-2-2b-it-q4f16_1-MLC`, Google's open-weight instruction model, quantized by MLC. Model weights, tokenizer and compiled runtime download from WebLLM's configured asset hosts. Model use is subject to the Gemma Terms of Use; this is open-weight, not a claim that Gemma 2 is OSI-certified open source. See https://ai.google.dev/gemma/terms and https://huggingface.co/google/gemma-2-2b-it and https://github.com/mlc-ai/web-llm.
 
 ## Features
 
@@ -33,4 +33,4 @@ Run `node --experimental-strip-types tests/practice.test.ts` for rewind and prom
 
 ## Credits
 
-WebLLM / MLC AI, Meta Llama, React, Tailwind CSS 4, lucide-react, and the Sites starter and supplied UI primitives. Application source: MIT; dependencies and model artifacts retain their respective licenses.
+WebLLM / MLC AI, Google Gemma, React, Tailwind CSS 4, lucide-react, and the Sites starter and supplied UI primitives. Application source: MIT; dependencies and model artifacts retain their respective licenses.
