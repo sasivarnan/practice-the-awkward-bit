@@ -12,7 +12,9 @@ WebLLM `gemma-2-2b-it-q4f16_1-MLC`, Google's open-weight instruction model, quan
 
 ## Features
 
-Three editable scenarios; supportive, neutral or mildly pushy role-play; five replies; separate feedback generation; retry from any user reply; optional browser-local saving, deletion and text export. Tailwind CSS 4 standard palette, typography, spacing and radius tokens.
+Three editable scenarios; supportive, neutral or mildly pushy role-play; five replies; separate feedback generation; retry from any user reply; optional browser-local saving, deletion and text export; separate downloaded-model removal with confirmation. Tailwind CSS 4 standard palette, typography, spacing and radius tokens.
+
+Feedback quotes must match a user reply. Suggestions come from three safe wording options. Alternatives may use only words from the quoted reply plus a small set of connecting and polite words; unsupported new words are rejected. This is deliberately conservative and can reject reasonable synonyms. It reduces invented details but does not guarantee semantic correctness.
 
 ## Privacy
 
